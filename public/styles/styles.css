@@ -3,44 +3,31 @@ body {
     align-items: center;
     flex-direction: column;
     background: #212534;
+    color: white;
 }
 
 img {
     height: 300px;
     border: 1px solid black;
     background: #eee;
-
 }
 
 button {
     background: none;
     border-radius: 16px;
-}
-
-h1,
-h2 {
     color: white;
 }
 
 .card {
     max-width: 100%;
     margin-top: 1%;
-    /* position: absolute; */
-    /* top: 15%; */
     text-align: center;
     overflow-wrap: break-word;
 }
 
-.buttons {
-    display: flex;
-    justify-content: space-around;
-}
-
 .infoContainer {
     max-width: 50%;
-    color: white;
-    /* text-align: left; */
-    padding: 0; 
+    padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -52,7 +39,6 @@ h2 {
 .recipe {
     list-style: none;
     margin: 0;
-    /* padding: 0; */
 }
 
 .instructions {
