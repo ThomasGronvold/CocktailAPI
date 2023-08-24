@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktails</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div class="card">
+        <h1>
+            <%= drink %>
+        </h1>
+        <img src="<%= drinkImg %>" alt="Drink Image Not Found">
+        <div class="buttons">
+            <form action="/" method="post">
+                <button>
+                    <h2>New Drink</h2>
+                </button>
+            </form>
+            
+        </div>
+    </div>
+    <div class="infoContainer">
+        <ul class="recipe">
+            <p>Ingridients:</p>
+            <% for (let i=0; i < ingredients.length; i++) { %>
+                <li>
+                    <%= ingredients[i] %> -
+                        <%= ingredientsMeasure[i] %>
+                </li>
+                <% } %>
+        </ul>
+        <div class="instructions">
+            <p>Instructions:</p>
+            <p>
+                <%= instructions %>
+            </p>
+        </div>
+    </div>
+    <script src="test.js"></script>
+</body>
+
+</html>
